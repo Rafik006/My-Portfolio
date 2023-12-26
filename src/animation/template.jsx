@@ -19,8 +19,8 @@ const Template = ({ info, className,type}) => {
       className={`${className} animated-paragraph`}
      
       includeWhiteSpaces
-      threshold={0.1}
-      rootMargin="20%"
+      threshold={0.2}
+      rootMargin="10%"
     >
       {info}
     </AnimatedText>
