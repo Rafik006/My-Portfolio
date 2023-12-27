@@ -1,7 +1,6 @@
 import AnimatedText from "react-animated-text-content";
 
 import React from "react";
-
 const Template = ({ info, className,type}) => {
   return (
     <AnimatedText

@@ -1,10 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Template from "../../animation/template";
-const     Landing_Page = ({ onStartClick,className }) => {
+import GLOBE from "vanta/dist/vanta.globe.min.js";
+// import BIRDS from "vanta/dist/vanta.birds.min";
 
+const Landing_Page = ({ onStartClick, className }) => {
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const myRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      console.log("test");
+      setVantaEffect(
+        GLOBE({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0xf0d22,
+          size: 1.9,
+          backgroundColor: 0xffffff,
+        })
+      );
+    }
+
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
   return (
     // bg-gradient-to-r from-purple-600 to-blue-600
-    <div className={`landing-page relative  h-screen text-white overflow-hidden ${className} `}>
+
+    <div
+      className={`landing-page relative  h-screen text-white overflow-hidden ${className}  `}
+      ref={myRef}
+    >
+      <div className="h-[100px] w-screen"></div>
       <div className="absolute inset-0">
         <img src="" />
         <div className="absolute inset-0 bg-white "></div>
@@ -14,7 +47,7 @@ const     Landing_Page = ({ onStartClick,className }) => {
         <h1 className="text-5xl font-bold leading-tight  text-black mb-4">
           <Template info={"Welcome to Our Awesome Website"} type={"words"} />
         </h1>
-        <div className="text-lg text-black mb-8">
+        <div className="text-2xl text-black mb-8 font-semibold">
           <Template
             info={"Discover amazing features and services that await you."}
             type={"chars"}

@@ -8,7 +8,7 @@ function ExprienceSection() {
   const [selectedCompany, setSelectedCompany] = useState(Experience[0].tag);
 
   return (
-    <div id="experience" className="container mx-auto ">
+    <div id="experience" className=" mx-auto w-1/2 ">
       <header>
         <h1 className="text-3xl font-bold my-4 "> My Experience</h1>
         <hr className="my-4" />
@@ -25,7 +25,7 @@ function ExprienceSection() {
                 } font-[600]  text-xl border-solid border-2 border-primaryColor p-4 rounded-xl hover:bg-black hover:text-white transition-all duration-300 ease-in-out`}
                 onClick={() => setSelectedCompany(item.tag)}
               >
-                {item.company}  
+                {item.company}
               </button>
             ))}
           </div>
@@ -47,16 +47,17 @@ function ExprienceSection() {
                 <ul>
                   {item.discription.map((desc, index) => (
                     <li key={index} className="text-xl  mb-1 font-light ">
-                      <Template info={desc} type="words"/>
+                      <Template info={desc} type="words" />
                       {/* {desc} */}
                     </li>
                   ))}
                 </ul>
                 {item.link && (
                   <button className="font-[600] bg-black  text-white text-base border-solid border-2 border-primaryColor p-3   mt-3 rounded-xl hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
-                  <a href={item.link} target="_blank">Visite website</a> 
-                   
-                 </button>
+                    <a href={item.link} target="_blank">
+                      Visite website
+                    </a>
+                  </button>
                 )}
               </div>
             ))}
@@ -71,8 +72,8 @@ function ExprienceSection() {
                   key={index}
                   className={`${
                     selectedCompany === item.tag
-                    ? "bg-black text-white"
-                    : "text-black"
+                      ? "bg-black text-white"
+                      : "text-black"
                   } flex-grow py-2 px-4 rounded-md`}
                   onClick={() => setSelectedCompany(item.tag)}
                 >
@@ -122,4 +123,3 @@ function ExprienceSection() {
 }
 
 export default ExprienceSection;
-
