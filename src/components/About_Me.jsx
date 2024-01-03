@@ -6,32 +6,32 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 // import SocialMedia from "./socialMedia/SocialMedia.jsx";
-import BIRDS from "vanta/dist/vanta.birds.min";
+// import BIRDS from "vanta/dist/vanta.birds.min";
 const About_Me = () => {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        BIRDS({
-          el: myRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 2.0,
-          scaleMobile: 1.0,
-          backgroundColor: 0xffffff,
-          color1: 0xca3c3c,
-          colorMode: "lerp",
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
+  // useEffect(() => {
+  //   if (!vantaEffect) {
+  //     setVantaEffect(
+  //       BIRDS({
+  //         el: myRef.current,
+  //         mouseControls: true,
+  //         touchControls: true,
+  //         gyroControls: false,
+  //         minHeight: 200.0,
+  //         minWidth: 200.0,
+  //         scale: 2.0,
+  //         scaleMobile: 1.0,
+  //         backgroundColor: 0xffffff,
+  //         color1: 0xca3c3c,
+  //         colorMode: "lerp",
+  //       })
+  //     );
+  //   }
+  //   return () => {
+  //     if (vantaEffect) vantaEffect.destroy();
+  //   };
+  // }, [vantaEffect]);
   return (
     <div className="w-11/12 h-screen  mx-auto flex cursor-pointer z-10" ref={myRef}>
       <div className="flex min-h-screen  w-full">

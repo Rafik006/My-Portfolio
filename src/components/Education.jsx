@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+// import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Experience } from "../../config/info.js";
 import Template from "../animation/template.jsx";
 // ... (imports and other code)

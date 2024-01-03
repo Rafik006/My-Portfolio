@@ -4,7 +4,7 @@ import ExprienceSection from "./Education.jsx";
 import RBK_Website from "../assets/Rbk_website.png";
 import E_commerce from "../assets/E-commerce.png";
 import "animate.css/animate.min.css";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+// import { AnimationOnScroll } from "react-animation-on-scroll";
 import Template from "../animation/template";
 import Cards from "../animation/project_card/Cards";
 import Skills from "./Skills/Skills";
@@ -22,20 +22,20 @@ const Body = () => {
         <About_Me />
       </section>
 
-      <AnimationOnScroll animateIn="animate__backInUp">
+      {/* <AnimationOnScroll animateIn="animate__backInUp"> */}
         <section className="bg-black h-auto w-screen flex flex-col justify-center items-center">
           <h1 className="text-white text-3xl font-bold my-4 ">
             <Template info={"Skills"} type={"chars"} />
           </h1>
           <Skills />
         </section>
-      </AnimationOnScroll>
-      <AnimationOnScroll animateIn="animate__backInUp">
+      {/* </AnimationOnScroll> */}
+      {/* <AnimationOnScroll animateIn="animate__backInUp"> */}
         <section id="experience" className="flex flex-col items-center ">
           <ExprienceSection />
         </section>
-      </AnimationOnScroll>
-      <AnimationOnScroll animateIn="animate__backInUp">
+      {/* </AnimationOnScroll> */}
+      {/* <AnimationOnScroll animateIn="animate__backInUp"> */}
         <section className="container mx-auto ">
           <Template
             info={"My Projects"}
@@ -52,7 +52,7 @@ const Body = () => {
             <Cards img_src={RBK_Website} project_name={"RebootKamp Website"} />
           </div>
         </section>
-      </AnimationOnScroll>
+      {/* </AnimationOnScroll> */}
     </article>
   );
 };
