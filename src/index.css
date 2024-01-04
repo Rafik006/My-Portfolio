@@ -8,12 +8,21 @@ body {
 
 .landing-page .vanta-canvas {
   z-index: 1 !important;
-}  
+}
 
-.gradient-text span {
-  background: linear-gradient(45deg, #FF8660, #8000FF);
+.gradient-text {
+  background: linear-gradient(45deg, #ff8660, #8000ff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   display: inline-block;
+}
+@media (max-width: 640px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: 90%;
+  }
 }

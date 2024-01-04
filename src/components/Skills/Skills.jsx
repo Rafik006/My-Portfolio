@@ -67,8 +67,5 @@ const Skills = () => {
 export default Skills;
 
 
-// "react-spring": "^9.7.3",
-// "scroll-snap": "^4.0.3",
-// "tw-elements-react": "^1.0.0-alpha2",
-// "vanta": "^0.5.24"
+
 

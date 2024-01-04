@@ -8,6 +8,7 @@ function ExprienceSection() {
   const [selectedCompany, setSelectedCompany] = useState(Experience[0].tag);
 
   return (
+    <section id="experience" className="flex flex-col items-center w-screen">
     <div id="experience" className=" mx-auto w-1/2 ">
       <header>
         <h1 className="text-3xl font-bold my-4 "> My Experience</h1>
@@ -119,6 +120,7 @@ function ExprienceSection() {
         </div>
       </header>
     </div>
+      </section>
   );
 }
 

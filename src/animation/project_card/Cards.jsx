@@ -7,9 +7,7 @@ const Cards = ({ img_src, project_name }) => {
       <div class="card__content ">
         <p class="card__title gradient-text">{project_name} </p>
         <p class="card__description mx-auto mt-[20px] mb-[20px] text-[22px] font-light  max-w-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco.
+      
         </p>
         <button className="font-[600] bg-black  text-white text-base border-solid border-2 border-primaryColor p-3   mt-3  rounded-xl  hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
           <a href="#" target="_blank">

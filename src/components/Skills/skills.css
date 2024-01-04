@@ -17,7 +17,7 @@
 
 .skill-box .title {
   display: block;
-  font-size: 25px;
+  font-size: 1.6vw;
   font-weight: 600;
   color: #333;
 }
@@ -44,35 +44,35 @@
 .skill-per.html {
   /*progreso de las diferentes lenguajes*/
   width: 90%;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .skill-per.css {
   /*progreso de las diferentes lenguajes*/
   width: 100%;
-  animation-delay: 3.1s;
+  animation-delay: 2.1s;
 }
 
 .skill-per.javascript {
   /*progreso de las diferentes lenguajes*/
   width: 90%;
-  animation-delay: 3.2s;
+  animation-delay: 2.2s;
 }
 .skill-per.React {
   /*progreso de las diferentes lenguajes*/
   width: 90%;
-  animation-delay: 3.2s;
+  animation-delay: 2.2s;
 }
 .skill-per.Mysql {
   /*progreso de las diferentes lenguajes*/
   width: 90%;
-  animation-delay: 3.2s;
+  animation-delay: 2.2s;
 }
 
 .skill-per.nodejs {
   /*progreso de las diferentes lenguajes*/
   width: 80%;
-  animation-delay: 3.3s;
+  animation-delay: 2.3s;
 }
 
 @keyframes progress {
@@ -119,3 +119,16 @@
   color: transparent;
   display: inline-block;
 }
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+  .containerr{
+    max-width: 90%;
+  }
+  .skill-box .title {
+    font-size: 2.5vw;
+
+  }
+ }

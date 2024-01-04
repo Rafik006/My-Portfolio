@@ -1,35 +1,35 @@
 import React, { useEffect, useRef, useState } from "react";
 import Template from "../../animation/template";
-// import GLOBE from "vanta/dist/vanta.globe.min.js";
-// import BIRDS from "vanta/dist/vanta.birds.min";
+import GLOBE from "vanta/dist/vanta.globe.min.js";
+import BIRDS from "vanta/dist/vanta.birds.min";
 
 const Landing_Page = ({ onStartClick, className }) => {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
-  // useEffect(() => {
-  //   if (!vantaEffect) {
-  //     console.log("test");
-  //     setVantaEffect(
-  //       GLOBE({
-  //         el: myRef.current,
-  //         mouseControls: true,
-  //         touchControls: true,
-  //         gyroControls: false,
-  //         minHeight: 200.0,
-  //         minWidth: 200.0,
-  //         scale: 1.0,
-  //         scaleMobile: 1.0,
-  //         color: 0xf0d22,
-  //         size: 1.9,
-  //         backgroundColor: 0xffffff,
-  //       })
-  //     );
-  //   }
+  useEffect(() => {
+    if (!vantaEffect) {
+      console.log("test");
+      setVantaEffect(
+        GLOBE({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0xf0d22,
+          size: 1.9,
+          backgroundColor: 0xffffff,
+        })
+      );
+    }
 
-  //   return () => {
-  //     if (vantaEffect) vantaEffect.destroy();
-  //   };
-  // }, [vantaEffect]);
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
   return (
     // bg-gradient-to-r from-purple-600 to-blue-600
 

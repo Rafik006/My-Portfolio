@@ -6,41 +6,43 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 // import SocialMedia from "./socialMedia/SocialMedia.jsx";
-// import BIRDS from "vanta/dist/vanta.birds.min";
+import BIRDS from "vanta/dist/vanta.birds.min";
 const About_Me = () => {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
-  // useEffect(() => {
-  //   if (!vantaEffect) {
-  //     setVantaEffect(
-  //       BIRDS({
-  //         el: myRef.current,
-  //         mouseControls: true,
-  //         touchControls: true,
-  //         gyroControls: false,
-  //         minHeight: 200.0,
-  //         minWidth: 200.0,
-  //         scale: 2.0,
-  //         scaleMobile: 1.0,
-  //         backgroundColor: 0xffffff,
-  //         color1: 0xca3c3c,
-  //         colorMode: "lerp",
-  //       })
-  //     );
-  //   }
-  //   return () => {
-  //     if (vantaEffect) vantaEffect.destroy();
-  //   };
-  // }, [vantaEffect]);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        BIRDS({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 2.0,
+          scaleMobile: 1.0,
+          backgroundColor: 0xffffff,
+          color1: 0xca3c3c,
+          colorMode: "lerp",
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
   return (
+    <section id="about_me" className="flex-1 h-[100vh] mt-[100px]">
+
     <div className="w-11/12 h-screen  mx-auto flex cursor-pointer z-10" ref={myRef}>
       <div className="flex min-h-screen  w-full">
         <div className="mx-auto">
           <div className="mx-auto mb-[30px] mt-[50px] h-[213px] w-[213px] overflow-hidden rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">
             <img src={Rafik_Image} alt="" />
           </div>
-          <h1 className="max-w-screen-sm text-center text-[45px] font-extrabold ">
-            <Template info={"Full Stack Mobile and Developer"} type={"chars"} />
+          <h1 className="max-w-screen-md text-center text-[45px] font-extrabold ">
+            <Template info={"Full Stack Web and Mobile Developer"} type={"chars"} />
            
             <Template
               className="gradient-text"
@@ -76,6 +78,7 @@ const About_Me = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
