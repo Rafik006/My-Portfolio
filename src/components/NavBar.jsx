@@ -85,7 +85,7 @@ const NavBar = ({ onStartClick }) => {
           }`}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col md:flex-row md:space-x-4 p-4 md:p-0 mt-4 font-[500] text-2xl  ">
+          <ul className="flex flex-col md:flex-row md:space-x-7  justify-between p-4 md:p-0 mt-4 font-[500] text-2xl  ">
             <li className="cursor-pointer hover:text-primaryColor">
               <a href="#" aria-current="page">
                 Home
@@ -93,9 +93,6 @@ const NavBar = ({ onStartClick }) => {
             </li>
             <li className="cursor-pointer hover:text-primaryColor">
               <a href="#">About</a>
-            </li>
-            <li className="cursor-pointer hover:text-primaryColor">
-              <a href="#">Services</a>
             </li>
             <li className="cursor-pointer hover:text-primaryColor">
               <a href="#">Contact</a>

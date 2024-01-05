@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Social.css";
+import "./Social.css";
 const SocialMedia = () => {
   return (
     <div class="social-card">
@@ -58,4 +58,4 @@ const SocialMedia = () => {
   );
 };
 
-// export default SocialMedia;
+export default SocialMedia;

@@ -37,7 +37,7 @@ const Landing_Page = ({ onStartClick, className }) => {
       className={`landing-page relative  h-screen text-white overflow-hidden ${className}  `}
       ref={myRef}
     >
-      <div className="h-[100px] w-screen"></div>
+     
       <div className="absolute inset-0">
         <img src="" />
         <div className="absolute inset-0 bg-white "></div>

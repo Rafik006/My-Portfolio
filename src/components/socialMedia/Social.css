@@ -1,4 +1,4 @@
-/* .social-card {
+.social-card {
     height: fit-content;
     width: 100%;
     display: flex;
@@ -63,14 +63,13 @@
   }
   .Btn:hover .BG {
     transform: scale(1.5);
-    /* transform-origin: bottom; */
-    /*font-size: 20px;
-    color: white; */
-  /* }
+    font-size: 20px;
+    color: white; 
+  }
   
   .Btn:hover .svgContainer {
     border: 1px solid rgba(216, 216, 216, 0.466);
     background-color: rgba(209, 209, 209, 0.466);
     backdrop-filter: blur(4px);
   }
-   */
+  

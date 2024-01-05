@@ -5,7 +5,7 @@ import Rafik_Image from "../assets/MhadhbiRafik_image.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-// import SocialMedia from "./socialMedia/SocialMedia.jsx";
+import SocialMedia from "./socialMedia/SocialMedia.jsx";
 import BIRDS from "vanta/dist/vanta.birds.min";
 const About_Me = () => {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -58,7 +58,7 @@ const About_Me = () => {
               }
             />
           </div>
-          {/* <SocialMedia/> */}
+          <SocialMedia/>
 
           {/* <div className="flex justify-evenly mx-auto mt-[20px] mb-[25px] text-[32px] hover:cursor-pointer ">
               <span><a href="https://github.com/Rafik006" target="_blank"><FaGithub/></a></span>
