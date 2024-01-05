@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import About_Me from "./About_Me";
 import ExprienceSection from "./Education.jsx";
-import RBK_Website from "../assets/Rbk_website.png";
-import E_commerce from "../assets/E-commerce.png";
 import "animate.css/animate.min.css";
-// import { AnimationOnScroll } from "react-animation-on-scroll";
 import Template from "../animation/template";
 import Skills from "./Skills/Skills";
 import Projects from "./projects/Projects";
