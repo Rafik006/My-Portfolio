@@ -32,7 +32,7 @@ const NavBar = ({ onStartClick }) => {
     <nav class="bg-white text-center fixed w-full z-10  top-0 start-0 border-b-2 shadow-lg">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <a
-          href="https://flowbite.com/"
+          onClick={()=>onStartClick()}
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
