@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Template from "../../animation/template";
+import Template from "../../animation/Test.jsx";
 import GLOBE from "vanta/dist/vanta.globe.min.js";
 import BIRDS from "vanta/dist/vanta.birds.min";
 
@@ -45,12 +45,12 @@ const Landing_Page = ({ onStartClick, className }) => {
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
         <h1 className="text-5xl font-bold leading-tight  text-black mb-4">
-          <Template info={"Welcome to Our Awesome Website"} type={"words"} />
+          <Template info={"Welcome to Our Awesome Website"} type={"paragraph"} />
         </h1>
         <div className="text-2xl text-black mb-8 font-semibold">
           <Template
             info={"Discover amazing features and services that await you."}
-            type={"chars"}
+            type={"paragraph"}
           />
         </div>
         {/* <a href="#" class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Get Started</a> */}

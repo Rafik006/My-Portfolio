@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Experience } from "../../config/info.js";
-import Template from "../animation/template.jsx";
+import Template from "../animation/Test.jsx";
 // ... (imports and other code)
 
 function ExprienceSection() {
@@ -48,7 +48,7 @@ function ExprienceSection() {
                   <ul>
                     {item.discription.map((desc, index) => (
                       <li key={index} className="text-xl  mb-1 font-light ">
-                        <Template info={desc} type="words" />
+                        <Template info={desc} type="paragraph" />
                         {/* {desc} */}
                       </li>
                     ))}

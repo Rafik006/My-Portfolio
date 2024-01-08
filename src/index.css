@@ -10,7 +10,7 @@ body {
   z-index: 1 !important;
 }
 
-.gradient-text {
+.gradient-text span {
   background: linear-gradient(45deg, #ff8660, #8000ff);
   -webkit-background-clip: text;
   background-clip: text;

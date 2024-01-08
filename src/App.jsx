@@ -12,7 +12,7 @@ export default function App() {
     setAnimateOut(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 500);
   };
   const landingPageClass = `landing-page ${animateOut ? "zoom-out" : ""}`;
   return (

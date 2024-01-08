@@ -1,11 +1,11 @@
 import React from "react";
 import "./skills.css";
-import Template from "../../animation/template.jsx"
+import Template from "../../animation/Test.jsx"
 const Skills = () => {
   return (
     <div class="containerr">
       <div class="skill-box">
-        <span class="title"> <Template info={"HTML"} type={"chars"}/> </span>
+        <span class="title"> <Template info={"HTML"} type={"paragraph"}/> </span>
 
         <div class="skill-bar">
           <span class="skill-per html">
@@ -14,7 +14,7 @@ const Skills = () => {
         </div>
       </div>
       <div class="skill-box">
-        <span class="title"><Template info={"CSS"} type={"chars"}/></span>
+        <span class="title"><Template info={"CSS"} type={"paragraph"}/></span>
 
         <div class="skill-bar">
           <span class="skill-per css">
@@ -23,7 +23,7 @@ const Skills = () => {
         </div>
       </div>
       <div class="skill-box">
-        <span class="title"><Template info={"javascript"} type={"chars"}/> </span>
+        <span class="title"><Template info={"javascript"} type={"paragraph"}/> </span>
 
         <div class="skill-bar">
           <span class="skill-per javascript">
@@ -34,7 +34,7 @@ const Skills = () => {
 
       
       <div class="skill-box">
-        <span class="title"><Template info={"React"} type={"chars"}/></span>
+        <span class="title"><Template info={"React"} type={"paragraph"}/></span>
 
         <div class="skill-bar">
           <span class="skill-per React">
@@ -43,7 +43,7 @@ const Skills = () => {
         </div>
       </div>
       <div class="skill-box">
-        <span class="title"> <Template info={"Node Js"} type={"chars"}/></span>
+        <span class="title"> <Template info={"Node Js"} type={"paragraph"}/></span>
 
         <div class="skill-bar">
           <span class="skill-per nodejs">
@@ -52,7 +52,7 @@ const Skills = () => {
         </div>
       </div>
       <div class="skill-box">
-        <span class="title"><Template info={"MYSQL"} type={"chars"}/></span>
+        <span class="title"><Template info={"MYSQL"} type={"paragraph"}/></span>
 
         <div class="skill-bar">
           <span class="skill-per Mysql">

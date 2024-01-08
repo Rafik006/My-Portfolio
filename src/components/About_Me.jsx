@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Template from "../animation/template.jsx";
+import Template from "../animation/Test.jsx";
 import cv from "../assets/Mhadhbi_Rafik_Resume.pdf";
 import Rafik_Image from "../assets/MhadhbiRafik_image.jpg";
 import { FaGithub } from "react-icons/fa";
@@ -42,17 +42,17 @@ const About_Me = () => {
             <img src={Rafik_Image} alt="" />
           </div>
           <h1 className="max-w-screen-md text-center text-[45px] font-extrabold ">
-            <Template info={"Full Stack Web and Mobile Developer"} type={"chars"} />
+            <Template info={"Full Stack Web and Mobile Developer"} type={"heading1"} />
            
             <Template
               className="gradient-text"
               info={"JavaScript Instructor"}
-              type={"chars"}
+              type={"heading1"}
             />
           </h1>
           <div className="mx-auto mt-[20px] mb-[20px] text-[22px] font-light text-center max-w-lg">
             <Template
-              type={"words"}
+              type={"paragraph"}
               info={
                 "Graduated from RebootKamp, learned full-stack development, then became good at making mobile apps with different tools. Now, I teach JavaScript to help others learn and improve their skills."
               }
