@@ -37,7 +37,7 @@ const NavBar = ({ onStartClick }) => {
         >
           <img
             src="https://www.bobolink.co/storage/news/March2019/Logo.png"
-            className="h-[100px] w-28  cursor-pointer"
+            className="h-[80px] w-28  cursor-pointer"
             onClick={onStartClick}
           />
         </a>
