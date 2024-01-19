@@ -87,7 +87,7 @@ const NavBar = ({ onStartClick }) => {
         >
           <ul className="flex flex-col md:flex-row md:space-x-7  justify-between p-4 md:p-0 mt-4 font-[500] text-2xl  ">
             <li className="cursor-pointer hover:text-primaryColor">
-              <a href="#" aria-current="page">
+              <a href="#" aria-current="page" className="text-decoration">
                 Home
               </a>
             </li>
