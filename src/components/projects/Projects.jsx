@@ -9,10 +9,10 @@ const Projects = () => {
     <section className="container mx-auto">
       <Template info={'My Projects'} className={'text-3xl font-bold mb-7'} type="paragraph" />
       <div className="container flex flex-wrap gap-6 justify-center items-center md:py-10 md:px-0 md:max-[500px]:flex-col projects">
-        <Cards img_src={RBK_Website} project_name={'RebootKamp Website'} className="w-full md:w-auto" />
-        <Cards img_src={E_commerce} project_name={'E-commerce Website'} className="w-full md:w-auto" />
-        <Cards img_src={E_commerce} project_name={'E-commerce Website'} className="w-full md:w-auto" />
-        <Cards img_src={RBK_Website} project_name={'RebootKamp Website'} className="w-full md:w-auto" />
+        <Cards img_src={RBK_Website} project_name={'RebootKamp Website'} className="w-full md:w-auto" source={"https://github.com/Thesis-Project01/RBK"} />
+        <Cards img_src={E_commerce} project_name={'E-commerce Website'} className="w-full md:w-auto" source={"https://github.com/farachet/E-commerce-Next-js"} />
+        <Cards img_src={E_commerce} project_name={'E-commerce Website'} className="w-full md:w-auto"  source={"https://github.com/farachet/E-commerce-Next-js"}/>
+        <Cards img_src={RBK_Website} project_name={'RebootKamp Website'} className="w-full md:w-auto" source={"https://github.com/Thesis-Project01/RBK"} />
       </div>
     </section>
   );
