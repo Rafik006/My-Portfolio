@@ -115,9 +115,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="footer_copyright">
-          <p>&copy; 2022 The Afterlogo Company Inc.</p>
-        </div>
+        
       </div>
     </footer>
   );

@@ -35,7 +35,7 @@ const About_Me = () => {
   return (
     <section id="about_me" className="flex-1 h-[100vh] mt-[100px]">
 
-    <div className="w-11/12 h-screen  mx-auto flex cursor-pointer z-10" ref={myRef}>
+    <div className="h-screen  mx-auto flex cursor-pointer z-10" ref={myRef}>
       <div className="flex min-h-screen  w-full">
         <div className="mx-auto">
           <div className="mx-auto mb-[30px] mt-[50px] h-[213px] w-[213px] overflow-hidden rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">

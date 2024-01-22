@@ -25,7 +25,7 @@
   margin-bottom: 0.5rem;
   display: inline-flex;
 }
-a:hover {
+.footer a:hover {
   border-bottom: 1px solid var(--dark);
 }
 .footer ul {
