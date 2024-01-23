@@ -45,11 +45,11 @@ const Landing_Page = ({ onStartClick, className }) => {
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
         <h1 className="text-5xl font-bold leading-tight  text-black mb-4">
-          <Template info={"Welcome to Our Awesome Website"} type={"paragraph"} />
+          <Template info={"WELCOME TO MY DIGITAL SPACE"} type={"paragraph"} />
         </h1>
         <div className="text-2xl text-black mb-8 font-semibold">
           <Template
-            info={"Discover amazing features and services that await you."}
+            info={" FULL-STACK DEVELOPER COMES ALIVE WITH EVERY SCROLL "}
             type={"paragraph"}
           />
         </div>

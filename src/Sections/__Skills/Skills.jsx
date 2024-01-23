@@ -3,7 +3,7 @@ import "./skills.css";
 import Template from "../../animation/Test.jsx"
 const Skills = () => {
   return (
-    <div class="containerr">
+    <section id="skills" class="containerr">
       <div class="skill-box">
         <span class="title"> <Template info={"HTML"} type={"paragraph"}/> </span>
 
@@ -43,6 +43,15 @@ const Skills = () => {
         </div>
       </div>
       <div class="skill-box">
+        <span class="title"><Template info={"React Native"} type={"paragraph"}/></span>
+
+        <div class="skill-bar">
+          <span class="skill-per React">
+            <span class="tooltip">90%</span>
+          </span>
+        </div>
+      </div>
+      <div class="skill-box">
         <span class="title"> <Template info={"Node Js"} type={"paragraph"}/></span>
 
         <div class="skill-bar">
@@ -60,7 +69,8 @@ const Skills = () => {
           </span>
         </div>
       </div>
-    </div>
+    </section>
+   
   );
 };
 

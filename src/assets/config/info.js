@@ -1,3 +1,5 @@
+import Rbk_website from "../Images/Rbk_website.png";
+import ecommerce from "../Images/E-commerce.png"
 export const Experience = [
   {
     company: "E-Tafakna",
@@ -24,3 +26,26 @@ export const Experience = [
     post: "JavaScript Instructor",
   },
 ];
+const projects = [
+  {
+    projectName: "RebootKamp Website",
+    imgSrc: Rbk_website,
+    sourceCode: "https://github.com/Thesis-Project01/RBK",
+  },
+  {
+    projectName: "E-commerce Website",
+    imgSrc: ecommerce,
+    sourceCode: "https://github.com/farachet/E-commerce-Next-js",
+  },
+  {
+    projectName: "E-commerce Website",
+    imgSrc: ecommerce,
+    sourceCode: "https://github.com/farachet/E-commerce-Next-js",
+  },
+  {
+    projectName: "RebootKamp Website",
+    imgSrc: Rbk_website,
+    sourceCode: "https://github.com/Thesis-Project01/RBK",
+  },
+];
+export default projects;

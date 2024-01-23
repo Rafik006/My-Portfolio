@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-// import { AnimationOnScroll } from "react-animation-on-scroll";
-import { Experience } from "../../config/info.js";
-import Template from "../animation/Test.jsx";
-// ... (imports and other code)
+import { Experience } from "../../assets/config/info";
+import Template from "../../animation/Test.jsx";
 
 function ExprienceSection() {
   const [selectedCompany, setSelectedCompany] = useState(Experience[0].tag);
@@ -111,7 +109,6 @@ function ExprienceSection() {
                         Visite website
                       </a>
                     </button>
-                  
                   )}
                 </div>
               ))}

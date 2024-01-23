@@ -4,12 +4,7 @@
   --light: #ffffff;
   --dark: #000;
 }
-/* body {
-  font-family: "Rubik", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+
 .footer h3 {
   font-family: "Noto Serif Display", serif;
   font-size: 2.3rem;
@@ -121,4 +116,33 @@ svg {
 }
 .footer_copyright {
   color: var(--light);
+}
+.c-nav-tool{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+.c-nav-tool_title {
+
+  font-weight: 600;
+  cursor: pointer;
+  display: inline;
+  /* text-align: center; */
+
+
+}
+.c-nav-tool_title a {
+  font-weight: 600;
+  text-decoration: none;
+transition: 0.8s ease-in-out;
+
+}
+ .c-nav-tool_title:hover a {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 1em;
+  width: 8em;
+
 }

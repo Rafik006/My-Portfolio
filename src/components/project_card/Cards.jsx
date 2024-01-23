@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 const Cards = ({ img_src, project_name,source }) => {
   return (
-    <div class="card p-8   rounded-xl text-gray-100 bg-center bg-cover w-2/5 transform duration-500 hover:-translate-y-1 cursor-pointer">
+    <div  class="card p-8   rounded-xl text-gray-100 bg-center bg-cover  transform duration-500 hover:-translate-y-1 cursor-pointer w-2/5">
       <img src={img_src} width="100%" />
       <div class="card__content ">
         <p class="card__title gradient-text">{project_name} </p>

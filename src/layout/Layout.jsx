@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
-import About_Me from "./About_Me";
-import ExprienceSection from "./Education.jsx";
+import About_Me from "../Sections/__About_me/About_Me";
+import ExprienceSection from "../Sections/__Experiences/Experiences.jsx";
 import "animate.css/animate.min.css";
 import Template from "../animation/Test.jsx";
-import Skills from "./Skills/Skills";
-import Projects from "./projects/Projects";
-import Footer from "./footer/Footer.jsx";
+import Skills from "../Sections/__Skills/Skills";
+import Projects from "../Sections/__Projects/Projects";
+import Footer from "../Sections/__Footer/Footer";
 
-const Body = () => {
+const Body = ({setContactMe}) => {
   const [animateIn, setAnimateIn] = useState(false);
 
   useEffect(() => {
     setAnimateIn(true);
+    setContactMe(true)
+
   }, []);
   const bodyClass = `body-container ${animateIn ? "zoom-in" : ""}`;
   return (
@@ -26,8 +28,8 @@ const Body = () => {
       </section>
 
       <ExprienceSection />
-      <Projects/>
-      <Footer/>
+      <Projects />
+      <Footer />
     </article>
   );
 };

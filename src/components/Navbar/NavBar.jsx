@@ -1,18 +1,17 @@
-
 import React, { useState } from "react";
 
-const NavBar = ({ onStartClick }) => {
+const NavBar = ({ onStartClick, ContactMe }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <nav class="bg-white text-center fixed w-full z-10  top-0 start-0 border-b-2 shadow-lg">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    <nav className="bg-white text-center fixed w-full z-10  top-0 start-0 border-b-2 shadow-lg">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <a
-          onClick={()=>onStartClick()}
-          class="flex items-center space-x-3 rtl:space-x-reverse"
+          onClick={() => onStartClick()}
+          className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
             src="https://www.bobolink.co/storage/news/March2019/Logo.png"
@@ -20,14 +19,17 @@ const NavBar = ({ onStartClick }) => {
             onClick={onStartClick}
           />
         </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
-
-          <button
-            className="font-[600]  text-xl text-white border-solid border-2 border-primaryColor p-[8px] rounded-xl bg-black hover:bg-white hover:text-black  hover:p-[10px] transition-all duration-300 ease-in-out"
-            onClick={onStartClick}
-          >
-            Get Started
-          </button>
+        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
+          {ContactMe ? (
+            <button
+              className="font-[600] text-xl text-white border-solid border-2 border-primaryColor p-[8px] rounded-xl bg-black hover:bg-white hover:text-black hover:p-[10px] transition-all duration-300 ease-in-out  sm:p-[6px] sm:hover:p-[8px]"
+              onClick={onStartClick}
+            >
+              Contact Me
+            </button>
+          ) : (
+            ""
+          )}
           <button
             onClick={toggleMenu}
             type="button"
@@ -35,9 +37,9 @@ const NavBar = ({ onStartClick }) => {
             aria-controls="navbar-sticky"
             aria-expanded={isMenuOpen}
           >
-            <span class="sr-only">Open main menu</span>
+            <span className="sr-only">Open main menu</span>
             <svg
-              class="w-10 h-10"
+              className="w-10 h-10"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -61,15 +63,16 @@ const NavBar = ({ onStartClick }) => {
         >
           <ul className="flex flex-col md:flex-row md:space-x-7  justify-between p-4 md:p-0 mt-4 font-[500] text-2xl  ">
             <li className="cursor-pointer hover:text-primaryColor">
-              <a href="#" aria-current="page" className="text-decoration">
-                Home
-              </a>
+              <a href="#about_me">About Me</a>
             </li>
             <li className="cursor-pointer hover:text-primaryColor">
-              <a href="#">About</a>
+              <a href="#experience">Experience</a>
             </li>
             <li className="cursor-pointer hover:text-primaryColor">
-              <a href="#">Contact</a>
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="cursor-pointer hover:text-primaryColor">
+              <a href="#projects">Projects</a>
             </li>
           </ul>
         </div>
