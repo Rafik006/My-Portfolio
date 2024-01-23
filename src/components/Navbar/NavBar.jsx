@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 
 const NavBar = ({ onStartClick, ContactMe }) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-
+  const dropdownRef = useRef(null);
+  useEffect(()=>{
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        closeMenu();
+      }
+    };
+    window.addEventListener("scroll", closeMenu);
+    window.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      window.removeEventListener("scroll", closeMenu);
+    };
+  },[])
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+  const closeMenu=()=>{
+    setMenuOpen(false);
+
+  }
   return (
     <nav className="bg-white text-center fixed w-full z-10  top-0 start-0 border-b-2 shadow-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
@@ -19,7 +36,7 @@ const NavBar = ({ onStartClick, ContactMe }) => {
             onClick={onStartClick}
           />
         </a>
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
+        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center" ref={dropdownRef}   >
           {ContactMe ? (
             <button
               className="font-[600] text-xl text-white border-solid border-2 border-primaryColor p-[8px] rounded-xl bg-black hover:bg-white hover:text-black hover:p-[10px] transition-all duration-300 ease-in-out  sm:p-[6px] sm:hover:p-[8px]"
@@ -35,7 +52,7 @@ const NavBar = ({ onStartClick, ContactMe }) => {
             type="button"
             className="inline-flex items-center p-2 w-14 h-14 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
-            aria-expanded={isMenuOpen}
+          
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -56,6 +73,7 @@ const NavBar = ({ onStartClick, ContactMe }) => {
           </button>
         </div>
         <div
+        
           className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${
             isMenuOpen ? "block" : "hidden"
           }`}
