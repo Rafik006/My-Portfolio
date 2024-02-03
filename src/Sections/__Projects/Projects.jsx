@@ -11,7 +11,7 @@ const Projects = () => {
       key={index}
          img_src={project.imgSrc}
          project_name={project.projectName} 
-          
+          // className="w-full md:w-auto"
          source={project.sourceCode}
       />)}
         

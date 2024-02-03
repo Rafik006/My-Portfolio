@@ -30,7 +30,7 @@ const About_Me = () => {
     };
   }, [vantaEffect]);
   return (
-    <section id="about_me" className="flex-1 h-[100vh] mt-[100px]">
+    <section id="about_me" className="flex-1 h-[100vh] mt-[100px] mb-[40px]">
       <div className="h-screen  mx-auto flex cursor-pointer z-10" ref={myRef}>
         <div className="flex min-h-screen  w-full">
           <div className="mx-auto">
