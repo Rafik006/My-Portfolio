@@ -5,9 +5,9 @@ export const Experience = [
     company: "E-Tafakna",
     date: "September 2023 - Present",
     discription: [
-      "Led development of a mobile app for digital contract signing",
-      " excelling in authentication with JWT, email, and mobile verification",
-      " Utilized React Native, SQL, and Express.js with libraries for seamless functionality",
+      "Experience in the development of a mobile app for digital contract signing",
+      " specializing in authentication using JWT, email, and mobile verification",
+      " Proficient in utilizing React Native, SQL, and Express.js with various libraries to ensure seamless functionality",
     ],
     link: "https://www.e-tafakna.com/",
     tag: "E-Tafakna",
