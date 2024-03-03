@@ -7,20 +7,19 @@ import Skills from "../Sections/__Skills/Skills";
 import Projects from "../Sections/__Projects/Projects";
 import Footer from "../Sections/__Footer/Footer";
 
-const Body = ({setContactMe}) => {
+const Body = ({ setContactMe }) => {
   const [animateIn, setAnimateIn] = useState(false);
 
   useEffect(() => {
     setAnimateIn(true);
-    setContactMe(true)
-
+    setContactMe(true);
   }, []);
   const bodyClass = `body-container ${animateIn ? "zoom-in" : ""}`;
   return (
-    <article className={`h-auto flex flex-col  gap-8 ${bodyClass}`}>
+    <article className={`h-auto flex flex-col  ${bodyClass}`}>
       <About_Me />
 
-      <section className="bg-black h-auto w-screen flex flex-col justify-center items-center mt-[200px]">
+      <section className="bg-black h-auto w-screen flex flex-col justify-center items-center  ">
         <h1 className="text-white text-3xl font-bold my-4 ">
           <Template info={"Skills"} type={"heading1"} />
         </h1>

@@ -1,5 +1,5 @@
 import Rbk_website from "../Images/Rbk_website.png";
-import ecommerce from "../Images/E-commerce.png"
+import ecommerce from "../Images/E-commerce.png";
 export const Experience = [
   {
     company: "E-Tafakna",
