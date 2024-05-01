@@ -4,6 +4,7 @@ import cv from "../../assets/Images/Mhadhbi_Rafik_Resume.pdf";
 import Rafik_Image from "../../assets/Images/MhadhbiRafik_image.jpg";
 import SocialMedia from "../../components/socialMedia/SocialMedia.jsx";
 import BIRDS from "vanta/dist/vanta.birds.min";
+import Resume from "../../components/ResumePopUp/Resume.jsx";
 const About_Me = () => {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
@@ -39,7 +40,7 @@ const About_Me = () => {
             </div>
             <h1 className="max-w-screen-md text-center text-[45px] font-extrabold ">
               <Template
-                info={"Full Stack Web and Mobile Developer"}
+                info={"Full Stack  Developer"}
                 type={"heading1"}
               />
 
@@ -60,14 +61,20 @@ const About_Me = () => {
             <SocialMedia />
 
             <div className="text-center flex justify-evenly">
-              <button className="font-[600]  text-xl border-solid border-2 border-primaryColor p-4 rounded-xl hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
+              <button
+                type="button"
+                data-modal-target="crypto-modal"
+                data-modal-toggle="crypto-modal"
+                className="font-[600]  text-xl border-solid border-2 border-primaryColor p-4 rounded-xl hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
+              >
                 <a href="mailto:rafikmhadhbi01@gmail.com">Get In Touch</a>
               </button>
               <button className="font-[600] bg-black  text-white text-xl border-solid border-2 border-primaryColor p-4 rounded-xl hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
-                <a href={cv} target="_blank">
+                {/* <a href={cv} target="_blank"> */}
                   Download CV
-                </a>
+                {/* </a> */}
               </button>
+              {/* <Resume /> */}
             </div>
           </div>
         </div>

@@ -38,12 +38,14 @@ const NavBar = ({ onStartClick, ContactMe }) => {
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center" ref={dropdownRef}   >
           {ContactMe ? (
+            <a href="mailto:rafikmhadhbi01@gmail.com">
             <button
               className="font-[600] text-xl text-white border-solid border-2 border-primaryColor p-[8px] rounded-xl bg-black hover:bg-white hover:text-black hover:p-[10px] transition-all duration-300 ease-in-out  sm:p-[6px] sm:hover:p-[8px]"
               onClick={onStartClick}
             >
               Contact Me
             </button>
+            </a>
           ) : (
             ""
           )}

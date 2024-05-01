@@ -1,5 +1,9 @@
 import Rbk_website from "../Images/Rbk_website.png";
 import ecommerce from "../Images/E-commerce.png";
+import travelMind from "../Images/TravelMind.png";
+import shoes_Store from "../Images/shoesStore.png";
+import doctorapp from "../Images/doctor_app.png";
+
 export const Experience = [
   {
     company: "E-Tafakna",
@@ -36,16 +40,22 @@ const projects = [
     projectName: "E-commerce Website",
     imgSrc: ecommerce,
     sourceCode: "https://github.com/farachet/E-commerce-Next-js",
+  }, 
+  {
+    projectName: "Travel Mind",
+    imgSrc: travelMind,
+    sourceCode: "https://github.com/Rafik006/TravelMind",
+  },
+{
+    projectName: "Shoes Store",
+    imgSrc: shoes_Store,
+    sourceCode: "https://github.com/Rafik006/tanitown-shoe-store",
   },
   {
-    projectName: "E-commerce Website",
-    imgSrc: ecommerce,
-    sourceCode: "https://github.com/farachet/E-commerce-Next-js",
+    projectName: "Doctor App ",
+    imgSrc: doctorapp,
+    sourceCode: "https://github.com/Rafik006/The-Doctor",
   },
-  {
-    projectName: "RebootKamp Website",
-    imgSrc: Rbk_website,
-    sourceCode: "https://github.com/Thesis-Project01/RBK",
-  },
+
 ];
 export default projects;
