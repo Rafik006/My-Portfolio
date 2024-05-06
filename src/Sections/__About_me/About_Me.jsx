@@ -70,9 +70,9 @@ const About_Me = () => {
                 <a href="mailto:rafikmhadhbi01@gmail.com">Get In Touch</a>
               </button>
               <button className="font-[600] bg-black  text-white text-xl border-solid border-2 border-primaryColor p-4 rounded-xl hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
-                {/* <a href={cv} target="_blank"> */}
+                <a href={cv} target="_blank">
                   Download CV
-                {/* </a> */}
+                </a>
               </button>
               {/* <Resume /> */}
             </div>
